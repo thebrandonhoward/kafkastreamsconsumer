@@ -1,0 +1,33 @@
+{
+  "type" : "record",
+  "name" : "Invoice",
+  "namespace" : "com.example.kafkastreamsconsumer.avro",
+  "fields" : [ {
+    "name" : "desc",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "id",
+    "type" : {
+      "type" : "long",
+      "java-class" : "java.lang.Long"
+    }
+  }, {
+    "name" : "netAmount",
+    "type" : {
+      "type" : "double",
+      "java-class" : "java.lang.Double"
+    }
+  }, {
+    "name" : "taxAmount",
+    "type" : {
+      "type" : "double",
+      "java-class" : "java.lang.Double"
+    }
+  }, {
+    "name" : "totalAmount",
+    "type" : {
+      "type" : "double",
+      "java-class" : "java.lang.Double"
+    }
+  } ]
+}
